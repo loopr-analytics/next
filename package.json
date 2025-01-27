@@ -1,6 +1,6 @@
 {
   "name": "@loopr-analytics/next",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Loopr SDK for analytics",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -38,6 +38,6 @@
     "typescript": "^5.7.3"
   },
   "peerDependencies": {
-    "next": "^15.1.6"
+    "next": ">=14.0.0 <16.0.0"
   }
 }
