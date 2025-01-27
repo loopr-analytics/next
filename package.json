@@ -1,0 +1,43 @@
+{
+  "name": "@loopr-analytics/next",
+  "version": "0.0.1",
+  "description": "Loopr SDK for analytics",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./app": {
+      "import": "./dist/app/index.mjs",
+      "require": "./dist/app/index.cjs",
+      "types": "./dist/app/index.d.ts"
+    },
+    "./pages": {
+      "import": "./dist/pages/index.mjs",
+      "require": "./dist/pages/index.cjs",
+      "types": "./dist/pages/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/app/index.tsx src/pages/index.tsx --format esm,cjs --dts --out-dir dist"
+  },
+  "keywords": [
+    "analytics",
+    "nextjs",
+    "loopr"
+  ],
+  "author": "Loopr Analytics",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.10",
+    "@types/react": "^19.0.8",
+    "next": "*",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "next": "^15.1.6"
+  }
+}
