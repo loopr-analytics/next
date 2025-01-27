@@ -27,4 +27,4 @@ const LooprAnalytics = ({ apiKey }: Props) => {
   return null;
 };
 
-export default LooprAnalytics;
+export { LooprAnalytics };
